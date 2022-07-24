@@ -1,9 +1,9 @@
 dubbo:
   registry:
-    address: zookeeper://0:2181
-    file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
+    address: zookeeper://myhost:2181
+#    file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
   protocol:
-    port: -1  # -1 : random port
+    port: 20880  # -1 : random port
     name: dubbo
   scan:
     base-packages: com.ab.demo.service
